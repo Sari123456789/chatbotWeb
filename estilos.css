@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #85c1e9;
+    font-size: 2em;
+    font-family: "Courier New", monospace;
+}
+
+#chatbotWrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#chatContainer {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #77c2d4;
+    border-radius: 8px;
+}
+
+#messages {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#userMessage {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#sendButton {
+    margin-top: 10px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #005bb5;
+}
+
+.user {
+    background-color: #e0f7fa;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.chatbot {
+    background-color: #9cc2db;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#openChatButton {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    background-color: transparent; /* Elimina el color de fondo */
+    color: transparent; /* Elimina el color del texto */
+    border: none;
+    padding: 0; /* Elimina el padding */
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#openChatButton:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Agrega un ligero fondo al pasar el mouse */
+}
+
+#openChatButton img {
+    width: 50px; /* Ajusta el ancho del icono */
+    height: 50px; /* Ajusta la altura del icono */
+    vertical-align: middle; /* Alinea el icono verticalmente con el texto (si lo hay) */
+}
