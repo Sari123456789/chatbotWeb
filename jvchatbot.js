@@ -1,4 +1,4 @@
-// JavaScript (modificado)
+// JavaScript
 
 const sendButton = document.getElementById('sendButton');
 const userMessage = document.getElementById('userMessage');
@@ -6,13 +6,13 @@ const messagesContainer = document.getElementById('messages');
 const chatbotWrapper = document.getElementById('chatbotWrapper'); // Referencia al wrapper
 const openChatButton = document.getElementById('openChatButton'); // Referencia al botón
 
-// Al inicio de tu script (ejecutado una vez por carga de página)
+
 const userId = 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
 console.log("User ID para esta sesión:", userId);
 
 // --- Inicialización: Ocultar el chatbot al cargar la página ---
 chatbotWrapper.style.display = 'none'; // Ocultar al inicio
-/* *** IMPORTANTE: Elimina esta línea *** */
+/* *** comentar esta línea *** */
 // openChatButton.innerText = 'Abrir Chat'; // Texto inicial del botón
 
 sendButton.addEventListener('click', async () => {
